@@ -10,7 +10,7 @@ class Products(DataBase):
       query = {}
 
       if node_id is not None:
-          query['node_id'] = node_id
+          query['NodeId'] = node_id
 
       try:
           r = self.db.products.find(query).skip(offset).limit(limit)
